@@ -7,6 +7,8 @@ app.listen(3000,()=>{
 })
 
 const userRoute = require('./src/routes/userRoute')
+const projectRoute = require('./src/routes/userRoute')
+
 app.use(userRoute)
 
 const mongoose = require('mongoose')
@@ -24,3 +26,4 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.listen(3000,()=>{
     console.log(("servidor em execução na porta 3000"))
 })
+
